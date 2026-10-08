@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO DO LIST </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="top">
+            <div>
+                <p class="small-title">MY DAY</p>
+                <h1>TO DO LIST</h1>
+                <p class="subtitle">Plan it. Do it. Done.</p>
+            </div>
+
+            <div class="date">
+                <span id="day"></span>
+                <span id="month"></span>
+            </div>
+        </div>
+
+
+        <div class="add-box">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you want to accomplish?"
+            >
+
+            <button id="addBtn">Add Task</button>
+
+        </div>
+
+
+        <div class="progress-area">
+
+            <div>
+                <span id="remaining">0 tasks left</span>
+                <span id="percentage">0%</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="active">
+                To Do
+            </button>
+
+            <button class="filter" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+
+        <div id="taskList"></div>
+
+
+        <div id="emptyMessage">
+            <div class="empty-circle">✓</div>
+            <h2>Nothing here yet</h2>
+            <p>Add your first task and start getting things done.</p>
+        </div>
+
+
+        <div class="bottom">
+            <span id="totalTasks">0 tasks</span>
+
+            <button id="clearCompleted">
+                Clear completed
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
